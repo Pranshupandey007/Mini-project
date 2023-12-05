@@ -18,15 +18,15 @@ async function check_Weather(city){
 
     let image = document.getElementById("my-img");
     if (data.weather[0].main === "Clear") {
-        image.src = 'image/sunny.gif'
+        image.src = 'sunny.gif'
     }else if (data.weather[0].main === "Clouds"){
-        image.src = 'image/cloudy1.gif'
+        image.src = 'cloudy1.gif'
     }else if (data.weather[0].main === "Mist" || data.weather[0].main === "Rain"){
-        image.src = 'image/rany.gif'
+        image.src = 'rany.gif'
     }else if (data.weather[0].main === "Haze"){
-        image.src = 'image/haze.gif'
+        image.src = 'haze.gif'
     }else{
-        image.src = 'image/stromy.gif'
+        image.src = 'stromy.gif'
     }
 }
 
